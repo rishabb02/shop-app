@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Shop App</h1>
+    <div class="container">
+        <div class="introSec">
+            <div>
+                <form id="form">
+                    <input type="text" class="searchText">
+                    <button type="submit" id="searchbutton">Search</button>
+                </form>
+                <button class="hidden" id="goBack">Go Back to All Products</button>
+            </div>
+            <button id="addProd">Add a Product</button>
+        </div>
+        <div class="products"></div>
+    </div>
+    <div class="modal hidden">
+        <div class="modalContainer">
+            <div class="modalContent">
+                <span class="closeModal">Close</span>
+                <form class="newProdForm">
+                    <div>
+                        <label>Product name:</label>
+                        <input name="name" class="newProdData" type="text">
+                    </div>
+                    <div>
+                        <label>Category:</label>
+                        <input name="category" class="newProdData" type="text">
+                    </div>
+                    <div>
+                        <label>Description:</label>
+                        <input name="description" class="newProdData" type="text">
+                    </div>
+                    <div>
+                        <label>Price:</label>
+                        <input name="price" class="newProdData" type="text">
+                    </div>
+                    <div>
+                        <label>Image address:</label>
+                        <input name="img" class="newProdData" type="text">
+                    </div>
+                    <div>
+                        <label>Product tags:</label>
+                        <input  name="tags" class="newProdData" type="text" placeholder="Enter tags seperated by spaces">
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
